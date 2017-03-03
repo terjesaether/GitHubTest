@@ -16,6 +16,7 @@ namespace GitHubTest.Controllers
         [HttpPost]
         public ActionResult Index(string text)
         {
+            text += "før teksten";
             ViewBag.MyText = $"{text} dette er lagt til";
             return View();
         }
