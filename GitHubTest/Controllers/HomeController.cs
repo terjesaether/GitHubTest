@@ -13,6 +13,13 @@ namespace GitHubTest.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Index(string text)
+        {
+            ViewBag.MyText = text;
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
