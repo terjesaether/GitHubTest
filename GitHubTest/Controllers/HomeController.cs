@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Web;
 using System.Web.Mvc;
 
@@ -33,5 +34,15 @@ namespace GitHubTest.Controllers
 
             return View();
         }
+
+
     }
+
+    public class MyClass
+    {
+        public string String { get; set; }
+        
+    }
+
+   
 }
