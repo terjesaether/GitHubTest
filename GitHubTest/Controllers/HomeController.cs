@@ -17,6 +17,7 @@ namespace GitHubTest.Controllers
         [HttpPost]
         public ActionResult Index(string text)
         {
+            text += "Før tekst ";
             ViewBag.MyText = text;
             return View();
         }
@@ -41,8 +42,8 @@ namespace GitHubTest.Controllers
     public class MyClass
     {
         public string String { get; set; }
-        
+
     }
 
-   
+
 }
