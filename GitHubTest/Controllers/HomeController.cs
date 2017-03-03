@@ -16,14 +16,13 @@ namespace GitHubTest.Controllers
         [HttpPost]
         public ActionResult Index(string text)
         {
-            text += "Hoj oh";
             ViewBag.MyText = text;
             return View();
         }
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            if (ViewBag != null) ViewBag.Message = "Your application description page.";
 
             return View();
         }
